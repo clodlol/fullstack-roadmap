@@ -1,28 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 :root {
   --grid-size: 16;
 }
 
 main {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  background-color: #FFE5BF;
+  width: 99vw;
 }
 
-.toolbar {
+#navbar
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 3rem;
+  width: 100%;
+  background-color: #F62440;
+}
+
+#titleText
+{
+ font-family: "Jersey 10", sans-serif;
+ font-size: 3rem;
+ color: #FFF2DB;
+}
+
+#toolbar
+{
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 2;
+  height: 100%;
 }
 
 #canvas {
-  height: 80vmax;
-  width: 80vmax;
-  background-color: beige;
+  height: 90vmin;
+  width: 90vmin;
+  background-color: #FFFAF3;
   display: grid;
   grid-template-columns: repeat(var(--grid-size), 1fr);
   grid-template-rows: repeat(var(--grid-size), 1fr);
   border: 2px solid black;
 }
 
+
+
 .canvasGridEl {
   outline: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #FFFAF3;
+}
+
+.canvasGridEl:hover {
+  border: 1px solid black;
 }

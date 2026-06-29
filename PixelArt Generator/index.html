@@ -9,14 +9,18 @@
   </head>
   <body>
     <main>
-      <h1>Pixel Art Generator</h1>
-      <p>Choose color and drag the slider to change grid size!</p>
-      <p>Press Reset button to reset your canvas.</p>
-      <button onclick="reset()">Reset</button>
-      <div class="toolbar">
-        <input id="colorPicker" type="color" />
-        <input id="sizePicker" type="range" />
+      <div id="navbar">
+        <span id="titleText">PixelArt Gen</span>
+        <span id="toolbar"
+          ><input id="colorPicker" type="color" />
+          <input id="sizePicker" type="range" min="16" max="64" step="8" />
+          <button id="resetButton" onclick="reset()">Reset</button></span
+        >
+        <span id="export">
+          <button id="downloadButton" onclick="download()">Export</button></span
+        </span>
       </div>
+
       <div id="canvas"></div>
     </main>
   </body>
