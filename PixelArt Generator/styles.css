@@ -1,0 +1,28 @@
+:root {
+  --grid-size: 16;
+}
+
+main {
+  display: grid;
+  place-items: center;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#canvas {
+  height: 80vmax;
+  width: 80vmax;
+  background-color: beige;
+  display: grid;
+  grid-template-columns: repeat(var(--grid-size), 1fr);
+  grid-template-rows: repeat(var(--grid-size), 1fr);
+  border: 2px solid black;
+}
+
+.canvasGridEl {
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Art Maker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>Pixel Art Generator</h1>
+      <p>Choose color and drag the slider to change grid size!</p>
+      <p>Press Reset button to reset your canvas.</p>
+      <button onclick="reset()">Reset</button>
+      <div class="toolbar">
+        <input id="colorPicker" type="color" />
+        <input id="sizePicker" type="range" />
+      </div>
+      <div id="canvas"></div>
+    </main>
+  </body>
+</html>
